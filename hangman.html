@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body, html {
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     background-color: black;
+    }
+        #tbl,td,th{
+            width: 200px;
+            height: 50px;
+            background-color: black;
+            margin-left: 40%;
+        }
+        #tbl{
+            background-image: url(file:///D:/Documents/%D7%9E%D7%A1%D7%9E%D7%9B%D7%99%D7%9D/Hangman%20game/universe-7325913__480.webp);
+            width: 300 px;
+           }
+
+        #buttem,#theLetter{
+            position: center;
+            align-items: center;
+            color: rgb(107, 101, 197);
+            text-decoration: none;
+            border: 0.1px solid rgb(107, 101, 197);
+            background-color: black;
+            /*margin:left 200px;*/
+            height: 70px;
+            width: 120px;
+            font-size: 20px;
+            text-align: center;
+            /*text-shadow: 30px;*/
+            margin-bottom: 20px;
+            margin-left: 100px;
+            /*border-radius: 20px;*/
+           
+        }
+        #buttem,#theLetter:hover {
+                background-color:  rgb(107, 101, 197);
+                color: black;
+        }
+        #pass{
+            height: 80px;
+            width: 100%;
+            align-items: center;
+            display: flex;
+            margin-left: 30%;
+        }
+        p{
+            color: inherit;
+            border: none;
+            padding: 0;
+            font: inherit;
+            margin: 0;
+            border-bottom: 3px solid white;
+            width: 70px;
+            margin-left: 10px;
+            background-color: unset;
+            color: rgb(222,196,213);
+            text-align: center;
+            font-size: 40px;
+            z-index: 2;
+        }
+        button{
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 40px;
+            height: 70px;
+            width: 170px;
+            margin-left: 70px;
+        }
+        button:hover{
+            background-color: #ddd;
+            color: black;
+        }
+        .next{
+            background-color: white;
+            color: black;
+        }
+        .round{
+            border-radius: 20px;
+        }
+        #titel{
+            font-size: 100px;
+            color: rgb(46, 62, 84);
+            padding-left: 400px;
+           text-shadow: 0 0 3p white, 0 0 5px white;
+        }
+    </style>
+    
+    <script src="hangman.js"></script>
+</head>
+<body>
+    <div id="body">
+        <h1 id="titel">Welcome</h1>
+        <div id="bottum">
+            <input id="theLetter" placeholder="Letters" type="text" list="letters" oninput="program()">
+            <button class="next" onclick="inputLinesByWordLength()">Begin &raquo;</button>
+            <datalist id="letters">
+                <option>a</option>
+                <option>b</option>
+                <option>c</option>
+                <option>d</option>
+                <option>e</option>
+                <option>f</option>
+                <option>g</option>
+                <option>h</option>
+                <option>i</option>
+                <option>j</option>
+                <option>k</option>
+                <option>l</option>
+                <option>m</option>
+                <option>n</option>
+                <option>o</option>
+                <option>p</option>
+                <option>q</option>
+                <option>r</option>
+                <option>s</option>
+                <option>t</option>
+                <option>u</option>
+                <option>v</option>
+                <option>w</option>
+                <option>x</option>
+                <option>y</option>
+                <option>z</option>
+            </datalist>
+        </div>
+
+        <div id="pass"></div>
+        <table id="tbl">
+            <tbody>
+                <tr>
+                    <td id="1" ></td>
+                    <td id="2" ></td>
+                    <td id="3" ></td>
+                    <td id="4" ></td>
+                </tr>
+                <tr>
+                    <td id="5" ></td>
+                    <td id="6" ></td>
+                    <td id="7" ></td>
+                    <td id="8" ></td>
+        
+                </tr>
+                <tr>
+                    <td id="9" ></td>
+                    <td id="10" ></td>
+                    <td id="11" ></td>
+                    <td id="12" ></td>
+        
+                </tr>
+            </tbody>
+        </table> 
+     </div>
+</body>
+</html>

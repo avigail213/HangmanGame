@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+        @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  /*display: flex;*/
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: black;
+}
+
+div[class*=box] {
+	height: 100%;
+	width: 100%; 
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  margin-left: 41%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.box-1 { background-color:black }
+
+.btn {
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+}
+.btn-one {
+	color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+}
+.btn-one .d {
+	transition: all 0.3s;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+}
+.btn-one:hover .d {
+	letter-spacing: 2px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+	padding:10px;
+	transform: scale(0.1, 1);
+	background-color: black;
+}
+p{
+    font-size: 100px;
+    margin-left: 450px;
+    color:red;
+    animation-name: example;
+    animation-duration: 5s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@keyframes example {
+  0%   {color: red;}
+  5%  {color: black;}
+  10%  {color: red;}
+  15% {color: black;}
+  20%  {color: red;}
+  25% {color: black;}
+  30%  {color: red;}
+  35% {color: black;}
+  40%  {color: red;}
+  45% {color: black;}
+  50%  {color: red;}
+  55% {color: black;}
+  60%  {color: red;}
+  65% {color: black;}
+  70%  {color: red;}
+  75% {color: black;}
+  80%  {color: red;}
+  85% {color: black;}
+  90%  {color: red;}
+  950% {color: black;}
+  100%  {color: red;}
+}
+</style>
+</head>
+<body>
+    <p>You failed</p>
+    <div class="box-1">
+        <div class="btn btn-one">
+        <a class="d" href="hangman.html">Try again</a>
+        </div>
+      </div>
+</body>
+</html>
