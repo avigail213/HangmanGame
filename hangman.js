@@ -50,7 +50,7 @@ function printTheLetter1(){
     //    arr[i].textContent=l.value;
     if(id>=12)
     {
-        window.location.replace('file:///D:/Documents/%D7%9E%D7%A1%D7%9E%D7%9B%D7%99%D7%9D/Hangman%20game/loser.html');
+        window.location.replace('loser.html');
         return;
      
             }
@@ -71,7 +71,7 @@ function printTheLetter1(){
         }
         if(x==word.length)
         {
-            window.location.replace('file:///D:/Documents/%D7%9E%D7%A1%D7%9E%D7%9B%D7%99%D7%9D/Hangman%20game/winer.html');
+            window.location.replace('winer.html');
            return;
         }
 }
